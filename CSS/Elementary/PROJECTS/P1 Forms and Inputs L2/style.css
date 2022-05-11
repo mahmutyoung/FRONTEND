@@ -1,0 +1,60 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFF2F2;
+}
+
+body {
+    width: 1265px;
+    height: 675px;
+    box-sizing: border-box;
+    background-image: url("bg.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.form-container {
+    width: 400px;
+    margin: auto;
+    margin-top: 5%;
+}
+
+.form-content {
+    padding-top: 30px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    background-color: rgba(255, 255, 255, .5);
+    border-radius: 8px;
+    -webkit-backdrop-filter: blur(10%);
+    backdrop-filter: blur(10px);
+    /*backdrop-filter: brightness(0%);
+
+    */
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 16px;
+}
+
+.education {
+    flex-direction: unset;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+    background-color: #ffe2e230;
+    padding-left: 8px;
+    border-width: 0px;
+    border-radius: 5px;
+    height: 36px;
+}
+
+::placeholder {
+    color: #FFF2F2;
+}

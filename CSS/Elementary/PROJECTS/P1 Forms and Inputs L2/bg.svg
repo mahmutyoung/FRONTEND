@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1281" height="800" viewBox="0 0 1281 800">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: #707070;
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-3, .cls-5 {
+        opacity: 0.5;
+      }
+
+      .cls-3 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-4 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-5 {
+        fill: url(#linear-gradient-3);
+      }
+
+      .cls-6 {
+        clip-path: url(#clip-path-2);
+      }
+
+      .cls-7 {
+        opacity: 0.4;
+        fill: url(#linear-gradient-4);
+      }
+
+      .cls-8, .cls-9 {
+        stroke: none;
+      }
+
+      .cls-9 {
+        fill: #707070;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="-0.097" y1="-0.097" x2="1.111" y2="1.133" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ba74ff"/>
+      <stop offset="0.413" stop-color="#4c157a"/>
+      <stop offset="0.632" stop-color="#260040"/>
+      <stop offset="1"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.236" y1="0.144" x2="0.637" y2="0.939" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ef0"/>
+      <stop offset="1"/>
+    </linearGradient>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_12" data-name="Rectangle 12" class="cls-1" width="403" height="282" transform="translate(-255 661)"/>
+    </clipPath>
+    <linearGradient id="linear-gradient-3" x1="0.256" y1="0.12" x2="0.547" y2="0.669" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#4ae6ff"/>
+      <stop offset="1"/>
+    </linearGradient>
+    <clipPath id="clip-path-2">
+      <rect id="Rectangle_13" data-name="Rectangle 13" class="cls-1" width="576" height="470" transform="translate(1292 1212)"/>
+    </clipPath>
+    <linearGradient id="linear-gradient-4" x1="0.231" y1="0.116" x2="0.313" y2="0.622" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="red"/>
+      <stop offset="1"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_5" data-name="Group 5" transform="translate(-587 -882)">
+    <g id="Path_2" data-name="Path 2" class="cls-2" transform="translate(587 882)">
+      <path class="cls-8" d="M 1279.5 799.5 L 0.5 799.5 L 0.5 0.5 L 1279.5 0.5 L 1279.5 799.5 Z"/>
+      <path class="cls-9" d="M 1 1 L 1 799 L 1279 799 L 1279 1 L 1 1 M 0 0 L 1280 0 L 1280 800 L 0 800 L 0 0 Z"/>
+    </g>
+    <ellipse id="Ellipse_2" data-name="Ellipse 2" class="cls-3" cx="61.5" cy="59" rx="61.5" ry="59" transform="matrix(0.799, -0.602, 0.602, 0.799, 1392.676, 1008.575)"/>
+    <g id="Mask_Group_1" data-name="Mask Group 1" class="cls-4" transform="translate(1126 221)">
+      <ellipse id="Ellipse_4" data-name="Ellipse 4" class="cls-5" cx="141" cy="139" rx="141" ry="139" transform="matrix(0.819, -0.574, 0.574, 0.819, -255.228, 730.012)"/>
+    </g>
+    <g id="Mask_Group_2" data-name="Mask Group 2" class="cls-6">
+      <ellipse id="Ellipse_3" data-name="Ellipse 3" class="cls-7" cx="309" cy="302" rx="309" ry="302" transform="matrix(0.809, -0.588, 0.588, 0.809, 1208.503, 1491.302)"/>
+    </g>
+  </g>
+</svg>

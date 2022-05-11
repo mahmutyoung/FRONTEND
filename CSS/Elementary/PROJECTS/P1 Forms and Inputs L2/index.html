@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Profile Form</title>
+</head>
+
+<body>
+    <div class="form-container">
+        <div class="form-content">
+            <div class="profile-title">Profile</div>
+            <form action="#">
+                <div class="input-container">
+                    <label for="first-name" name="first-name">First Name</label>
+                    <input type="text" id="first-name" class="first-name" name="first-name" placeholder="First Name"></input>
+                </div>
+                <div class="input-container ">
+                    <label for="last-name" name="last-name">Last Name</label>
+                    <input type="text" id="last-name" name="last-name" placeholder="Last Name"></input>
+                </div>
+                <div class="input-container">
+                    <label for="email" name="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Email"></input>
+                </div>
+                <div class="input-container check-box-container">
+                    <div id="gender">Gender</div>
+                    <div>
+                        <label for="male" name="gender">Male</label>
+                        <input type="checkbox" id="male" class="gender" name="male"></input>
+                        <label for="female" name="female">Female</label>
+                        <input type="checkbox" id="female" class="gender" name="female"></input>
+                        <label for="Male" name="gender">Other</label>
+                        <input type="checkbox" id="other" class="gender" name="Other"></input>
+                    </div>
+                </div>
+                <div class="input-container education">
+                    <label for="education" name="education">Education</label>
+                    <select id="education" name="education">
+                        <option value="High School">High School</option>
+                        <option value="Undergraduate" selected>Undergraduate Degree</option>
+                        <option value="Master">Master Degree</option>
+                        <option value="Phd">Phd</option>
+                    </select>
+                </div>
+                <div class="input-container radio-container">
+                    <div id="Hobbies">Hobbies</div>
+                    <div>
+                        <label for="tech" name="gender">Tech</label>
+                        <input type="radio" id="male" class="gender" name="male"></input>
+                        <label for="female" name="female">Sports</label>
+                        <input type="radio" id="female" class="gender" name="female"></input>
+                        <label for="Male" name="gender">Art</label>
+                        <input type="radio" id="other" class="gender" name="Other"></input>
+                    </div>
+                </div>
+                <div class="input-container">
+                    <label for="submit" name="submit"></label>
+                    <input type="submit" id="submit" name="submit" value="Submit"></input>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>

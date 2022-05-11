@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <style>
+        .table {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+        }
+        
+        th,
+        td {
+            border: solid 0.5px #ccc;
+            padding: 8px;
+        }
+        
+        th {
+            background-color: blueviolet;
+            color: white;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+
+<body>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>İsim Soyisim</th>
+                <th>Yaş</th>
+                <th>Meslek</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ali Ahmet Genç</td>
+                <td>6 ay</td>
+                <td>Bebeklik</td>
+                <td>aliahmet@gmail.com</td>
+            </tr>
+
+            <tr>
+                <td>Ali Ahmet Genç</td>
+                <td>6 ay</td>
+                <td>Bebeklik</td>
+                <td>aliahmet@gmail.com</td>
+            </tr>
+
+            <tr>
+                <td>Ali Ahmet Genç</td>
+                <td>6 ay</td>
+                <td>Bebeklik</td>
+                <td>aliahmet@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Ali Ahmet Genç</td>
+                <td>6 ay</td>
+                <td>Bebeklik</td>
+                <td>aliahmet@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Ali Ahmet Genç</td>
+                <td>6 ay</td>
+                <td>Bebeklik</td>
+                <td>aliahmet@gmail.com</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!--***** Change table header color***** -->
+    <!--<script>
+        let val = document.querySelectorAll("th");
+        console.log(val);
+
+        for (let i = 0; i < val.length; i++) {
+            val[i].style.backgroundColor = "#555";
+        }
+    </script> -->
+
+
+
+
+    <!-- *****Change even numbered row color background******  -->
+    <!--  <script>
+        let val = document.querySelectorAll("tr:nth-child(even)");
+        console.log(val);
+        
+        for (let i = 0; i < val.length; i++) {
+            val[i].style.backgroundColor = "#aaa";
+        }
+    </script> -->
+
+
+
+
+    <!-- *****Change Occupation****** -->
+    <!--    <script>
+        let val = document.querySelectorAll("td:nth-last-child(2)");
+        console.log(val);
+
+        for (let i = 0; i < val.length; i++) {
+            val[i].innerHTML = "Babyhood";
+        }
+    </script> -->
+
+
+
+    <!--     ********Change name*******-->
+    <!--<script>
+        let val = document.querySelectorAll("td:first-child");
+        console.log(val);
+
+        for (let i = 0; i < val.length; i++) {
+            val[i].innerHTML = "AA Genç";
+        }
+    </script> -->
+
+
+    <!--     ******* Add a new element*****-->
+    <script>
+        const newRow = document.createElement('tr');
+        newRow.setAttribute("class", "new-row");
+        document.querySelector("tbody").appendChild(newRow);
+        newRow.innerHTML = "<td class='name'>Mahmut Genç</td><td>35</td><td>Terapist</td><td>mahmut@gmail.com</td>";
+
+
+        console.log(document.querySelectorAll("tr"))
+    </script>
+
+
+</body>
+
+</html>

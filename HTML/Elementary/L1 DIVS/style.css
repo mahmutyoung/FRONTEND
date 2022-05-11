@@ -1,0 +1,36 @@
+.container-main {
+    background-color: blue;
+    border-color: rgb(1, 9, 85);
+    border-width: 10px;
+    border-style: solid;
+    text-align: center;
+    margin: 20px;
+}
+
+.container-sub1 {
+    width: 25%;
+    background-color: aqua;
+    border-color: rgb(0, 150, 120);
+    border-width: 10px;
+    border-style: solid;
+    text-align: center;
+    margin: 20px;
+}
+
+.container-sub2 {
+    width: 25%;
+    background-color: rgb(67, 225, 55);
+    border-color: rgb(4, 61, 2);
+    border-width: 10px;
+    border-style: solid;
+    text-align: center;
+}
+
+.container-sub3 {
+    width: 50%;
+    background-color: rgb(225, 55, 163);
+    border-color: rgb(61, 2, 51);
+    border-width: 10px;
+    border-style: solid;
+    text-align: center;
+}

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Profile Form</title>
+    <style>
+        html {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #FFF2F2;
+        }
+        
+        body {
+            width: 1265px;
+            height: 675px;
+            box-sizing: border-box;
+            background-color: black;
+        }
+        
+        .form-container {
+            width: 400px;
+            margin-top: 5%;
+        }
+        
+        .form-content {
+            padding-top: 30px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: auto;
+            background-color: rgba(255, 255, 255, .5);
+            border-radius: 8px;
+            -webkit-backdrop-filter: blur(10%);
+            backdrop-filter: blur(10px);
+            /*backdrop-filter: brightness(0%);
+        
+            */
+        }
+        
+        .input-container {
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 16px;
+        }
+        
+        .education {
+            flex-direction: unset;
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        select {
+            background-color: #ffe2e230;
+            padding-left: 8px;
+            border-width: 0px;
+            border-radius: 5px;
+            height: 36px;
+        }
+        
+         ::placeholder {
+            color: #FFF2F2;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="form-container">
+        <div class="form-content">
+            <div class="profile-title" id="profile">Profile</div>
+            <form action="#">
+                <div class="input-container">
+                    <label for="first-name" name="first-name">First Name</label>
+                    <input type="text" id="first-name" class="first-name" name="first-name" placeholder="First Name"></input>
+                </div>
+                <!--  <script>
+                    let val = document.getElementsByClassName("first-name");
+                    console.log(val);
+                </script> -->
+
+                <div class="input-container ">
+                    <label for="last-name" name="last-name" class="label">Last Name</label>
+                    <input type="text" id="last-name" name="last-name" placeholder="Last Name"></input>
+                </div>
+
+                <script>
+                    //let inputFirstName = document.getElementById("first-name");
+
+                    //inputFirstName.style.backgroundColor = "RGB(255,0,0,0.2)";
+
+                    /*
+                    let inputLastName = document.getElementsByClassName("label");
+                    inputLastName.style.backgroundColor = "RGB(255,0,0,0.2)";
+                    inputLastName[0].innerHTML = "Soyisim";
+                    let profile = document.getElementById("profile");
+                    profile.innerHTML = "<p id='profil'>Profile</p>";
+                    let profil = document.getElementById("profil");
+                    console.log(profil);
+                    */
+                    /* getElement... methods return HTML collections. 
+                    Use for loop
+                    
+                    querySelectorAll() method returns NodeList. U can 
+                    use for loop or forEach loop. The latter one is easier.
+                    */
+                    /* 
+                    let val = document.querySelectorAll("input");
+                    console.log(val);
+                    val.forEach(function(item) {
+                       item.style.backgroundColor = "red";
+                     });*/
+
+                    /* Create an element and add to parent*/
+                    /*
+                    const div = document.createElement('div');
+                    div.setAttribute('class', "subtitle");
+                    div.appendChild(document.createTextNode("Lets create a profile"));
+                    document.querySelector(".profile-title").appendChild(div);*/
+                </script>
+
+                <div class="input-container">
+                    <label for="email" name="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Email"></input>
+                </div>
+                <div class="input-container check-box-container">
+                    <div id="gender">Gender</div>
+                    <div>
+                        <label for="male" name="gender">Male</label>
+                        <input type="checkbox" id="male" class="gender" name="male"></input>
+                        <label for="female" name="female">Female</label>
+                        <input type="checkbox" id="female" class="gender" name="female"></input>
+                        <label for="Male" name="gender">Other</label>
+                        <input type="checkbox" id="other" class="gender" name="Other"></input>
+                    </div>
+                </div>
+                <div class="input-container education">
+                    <label for="education" name="education">Education</label>
+                    <select id="education" name="education">
+                        <option value="High School">High School</option>
+                        <option value="Undergraduate" selected>Undergraduate Degree</option>
+                        <option value="Master">Master Degree</option>
+                        <option value="Phd">Phd</option>
+                    </select>
+                </div>
+                <div class="input-container radio-container">
+                    <div id="Hobbies">Hobbies</div>
+                    <div>
+                        <label for="tech" name="gender">Tech</label>
+                        <input type="radio" id="male" class="gender" name="male"></input>
+                        <label for="female" name="female">Sports</label>
+                        <input type="radio" id="female" class="gender" name="female"></input>
+                        <label for="Male" name="gender">Art</label>
+                        <input type="radio" id="other" class="gender" name="Other"></input>
+                    </div>
+                </div>
+                <div class="input-container">
+                    <label for="submit" name="submit"></label>
+                    <input type="submit" id="submit" name="submit" value="Submit"></input>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

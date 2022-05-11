@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <script src="\JQUERY\node_modules\jquery\dist\jquery.min.js"></script>
+    <script>
+        $(function() {
+            $(".delete").click(function() {
+                $("p:last").remove();
+            });
+
+        });
+
+        $(function() {
+            $(".add").click(function() {
+                $("p:last").after("<p>Exercise2</p>");
+            });
+        });
+    </script>
+</head>
+<p>Exercise</p>
+<button class="delete">Click</button>
+<button class="add">Add</button>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+$primary-color: rgb(241, 14, 14);
+$font-title:'Segoe UI',
+Tahoma,
+Geneva,
+Verdana,
+sans-serif;
+p {
+    font-family: $font-title;
+    background-color: $primary-color;
+}

@@ -5,7 +5,7 @@ const input = document.querySelector("#input-area");
 let btnDeleteAll = document.getElementsByClassName("btn-delete-all")[0]
 btnDeleteAll.disabled = true;
 
-
+//put a comment
 
 
 

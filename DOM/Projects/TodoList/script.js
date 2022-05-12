@@ -1,13 +1,9 @@
 const btnAdd = document.querySelector("#btn-add");
 //let myTasks = document.getElementsByClassName("task")
-let myTasks = document.getElementsByClassName("tasks")[0]
+const myTasks = document.getElementsByClassName("tasks")[0]
 const input = document.querySelector("#input-area");
-let btnDeleteAll = document.getElementsByClassName("btn-delete-all")[0]
+const btnDeleteAll = document.getElementsByClassName("btn-delete-all")[0]
 btnDeleteAll.disabled = true;
-
-
-
-
 
 
 btnAdd.addEventListener("click", function() {
@@ -32,7 +28,7 @@ btnAdd.addEventListener("click", function() {
 });
 
 btnDeleteAll.addEventListener("click", function() {
-    for (let i = 0; i < myTasks.children.length; i++) {
-        myTasks.children[i].remove();
-    }
+    myTasks.innerHTML = "";
+
+
 });

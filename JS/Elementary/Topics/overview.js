@@ -1,3 +1,39 @@
+/*******Variable Scope*******/
+
+/* var x = "outer scope";
+const a = function() {
+
+    console.log(x);
+    var x = 'inner scope';
+
+};
+a(); //undefined */
+
+
+/* let y = "outer scope";
+const b = function() {
+
+    console.log(y);
+    let y = 'inner scope';
+
+};
+b(); //ReferenceError: can not access y before initialization
+*/
+
+
+/* console.log(k); //undefined. Because it is declared and initialized to default
+console.log(l); //ReferenceError. Because it is declared but not initialized to a default
+var k = 5;
+let l = 6; */
+
+
+
+/*******RESULT *******/
+/* 1. For now, fuck the details. just stick to several best-practices.
+    1.1. Use const as much as possible. Use let if you have to(for mutable primitives).
+    1.2. Write code in 'strict mode' mindset
+
+ */
 // *****Function Declaration Style 1*****
 //function sum(a, b) {
 //    let c = a + b;
@@ -78,7 +114,7 @@
 // 25.0 - 29,9 --->Fat
 // 30 - 34,9 ----->Obese
 
-/*  Project 1. */
+/**********   Project 1. **************/
 // Take information in any unit for weight and height and calculate.
 
 /* var person = {
@@ -105,7 +141,9 @@ function calculateBWI(person) {
 
 calculateBWI(person); */
 
-/* Project 2. ATM demo */
+
+
+/************* Project 2. ATM demo ****************/
 
 /*var accountA = {
     name: 'Mahmut Genç',

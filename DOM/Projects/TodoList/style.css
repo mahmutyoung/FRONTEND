@@ -33,7 +33,7 @@ input {
 
 .new-item #btn-add {
     flex-grow: 3;
-    background-color: rgb(63, 169, 255);
+    background-color: rgb(51, 186, 207);
     color: white;
 }
 
@@ -58,7 +58,7 @@ h3 {
     padding: 0px 8px;
     color: white;
     border: 1px solid salmon;
-    background-color: salmon;
+    background-color: rgb(250, 114, 114);
     border-radius: 5px;
 }
 

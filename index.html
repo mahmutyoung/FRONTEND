@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body id="body">
+    <div class="list-container" id="list-container">
+        <div class="header" id="header">
+            <h1 id="app-header">TodoList</h1>
+
+        </div>
+        <form class="new-item" id="new-item" action="#">
+            <label for="input-area" id="input-label">Add New Task: </label>
+            <input type="text" id="input-area" name="input" value="" placeholder="New Task"></input>
+            <label for="btn-add" id="submit-label"></label>
+            <input class="btn-add" id="btn-add" type="button" value="Add" target="#">
+
+        </form>
+
+        <div class="tasks-container" id="task-container">
+            <div class="delete-all-container">
+                <h3 id="header-my-tasks">My Tasks</h3>
+                <button class="btn-delete-all">Delete All</button>
+            </div>
+            <ul class="tasks" id="tasks"></ul>
+        </div>
+        <script src="script.js"></script>
+
+    </div>
+</body>
+
+</html>

@@ -25,13 +25,13 @@ $bg-gradient: linear-gradient(to bottom, RGB(255, 255, 255), $color-primary);
         transform: translate(-2 * $sqr-dim, -2 * $sqr-dim) rotate(180deg);
     }
     50% {
-        transform: translate(1 * $sqr-dim, -5 * $sqr-dim) rotate(360deg);
+        transform: translate(1 * $sqr-dim, -3 * $sqr-dim) rotate(360deg);
     }
     75% {
-        transform: translate(-1 * $sqr-dim, -8 * $sqr-dim) rotate(540deg);
+        transform: translate(-1 * $sqr-dim, -4 * $sqr-dim) rotate(540deg);
     }
     100% {
-        transform: translate(2 * $sqr-dim, -9 * $sqr-dim) rotate(720deg);
+        transform: translate(2 * $sqr-dim, -5 * $sqr-dim) rotate(720deg);
     }
 }
 

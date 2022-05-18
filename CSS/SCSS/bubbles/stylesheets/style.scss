@@ -39,7 +39,7 @@ $bg-gradient: linear-gradient(to bottom, RGB(255, 255, 255), $color-primary);
     animation: base 20s linear infinite;
 }
 
-@mixin circle {
+@mixin bubble-anim {
     @include base-anim;
 }
 
@@ -52,7 +52,7 @@ $bg-gradient: linear-gradient(to bottom, RGB(255, 255, 255), $color-primary);
     width: 0.5 * $box-height;
     background-image: $gradient;
     .circle1 {
-        @include circle;
+        @include bubble-anim;
         position: absolute;
         bottom: -$sqr-dim;
         left: 0px;

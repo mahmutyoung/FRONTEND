@@ -1,0 +1,136 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrapper {
+  height: 100%;
+  width: 100%;
+}
+
+@-webkit-keyframes base {
+  0% {
+    -webkit-transform: translate(200px, -100px);
+            transform: translate(200px, -100px);
+  }
+  25% {
+    -webkit-transform: translate(-200px, -200px) rotate(180deg);
+            transform: translate(-200px, -200px) rotate(180deg);
+  }
+  50% {
+    -webkit-transform: translate(100px, -500px) rotate(360deg);
+            transform: translate(100px, -500px) rotate(360deg);
+  }
+  75% {
+    -webkit-transform: translate(-100px, -800px) rotate(540deg);
+            transform: translate(-100px, -800px) rotate(540deg);
+  }
+  100% {
+    -webkit-transform: translate(200px, -900px) rotate(720deg);
+            transform: translate(200px, -900px) rotate(720deg);
+  }
+}
+
+@keyframes base {
+  0% {
+    -webkit-transform: translate(200px, -100px);
+            transform: translate(200px, -100px);
+  }
+  25% {
+    -webkit-transform: translate(-200px, -200px) rotate(180deg);
+            transform: translate(-200px, -200px) rotate(180deg);
+  }
+  50% {
+    -webkit-transform: translate(100px, -500px) rotate(360deg);
+            transform: translate(100px, -500px) rotate(360deg);
+  }
+  75% {
+    -webkit-transform: translate(-100px, -800px) rotate(540deg);
+            transform: translate(-100px, -800px) rotate(540deg);
+  }
+  100% {
+    -webkit-transform: translate(200px, -900px) rotate(720deg);
+            transform: translate(200px, -900px) rotate(720deg);
+  }
+}
+
+.container {
+  list-style: none;
+  position: relative;
+  overflow: hidden;
+  margin: 10% auto;
+  height: 800px;
+  width: 400px;
+  background-image: radial-gradient(farthest-side at 50px 50px, rgba(255, 255, 255, 0.5), rgba(0, 150, 100, 0.5));
+}
+
+.container .circle1, .container .circle2, .container .circle3, .container .circle4, .container .circle5, .container .circle6, .container .circle7, .container .circle8 {
+  -webkit-animation: base 20s linear infinite;
+          animation: base 20s linear infinite;
+  position: absolute;
+  bottom: -100px;
+  left: 0px;
+  background-image: radial-gradient(farthest-side at 50px 50px, rgba(255, 255, 255, 0.5), rgba(0, 150, 100, 0.5));
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.container .circle2 {
+  left: 40px;
+  width: 80px;
+  height: 80px;
+  -webkit-animation-delay: -1s;
+          animation-delay: -1s;
+}
+
+.container .circle3 {
+  left: 80px;
+  -webkit-animation-delay: -3s;
+          animation-delay: -3s;
+  width: 53.33333px;
+  height: 53.33333px;
+}
+
+.container .circle4 {
+  left: 320px;
+  -webkit-animation-delay: -5s;
+          animation-delay: -5s;
+  width: 80px;
+  height: 80px;
+}
+
+.container .circle5 {
+  left: 240px;
+  -webkit-animation-delay: -7s;
+          animation-delay: -7s;
+  width: 40px;
+  height: 40px;
+}
+
+.container .circle6 {
+  left: 120px;
+  -webkit-animation-delay: -9s;
+          animation-delay: -9s;
+  width: 53.33333px;
+  height: 53.33333px;
+}
+
+.container .circle7 {
+  left: 160px;
+  -webkit-animation-delay: -11s;
+          animation-delay: -11s;
+  width: 40px;
+  height: 40px;
+}
+
+.container .circle8 {
+  left: 200px;
+  -webkit-animation-delay: -13s;
+          animation-delay: -13s;
+  width: 80px;
+  height: 80px;
+}
+/*# sourceMappingURL=style.css.map */

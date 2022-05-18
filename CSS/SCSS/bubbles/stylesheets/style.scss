@@ -1,0 +1,113 @@
+$color-primary: RGB(0, 150, 100);
+$box-height: 800px;
+$sqr-dim: $box-height/8;
+$sqr-dim-small: $box-height/20;
+$sqr-dim-medium: $box-height/15;
+$sqr-dim-big: $box-height/10;
+$gradient: radial-gradient( farthest-side at 50px 50px, rgba(255, 255, 255, 0.5), rgba(0, 150, 100, 0.5));
+$bg-gradient: linear-gradient(to bottom, RGB(255, 255, 255), $color-primary);
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    height: 100%;
+    width: 100%;
+}
+
+@keyframes base {
+    0% {
+        transform: translate(2 * $sqr-dim, -1 * $sqr-dim);
+    }
+    25% {
+        transform: translate(-2 * $sqr-dim, -2 * $sqr-dim) rotate(180deg);
+    }
+    50% {
+        transform: translate(1 * $sqr-dim, -5 * $sqr-dim) rotate(360deg);
+    }
+    75% {
+        transform: translate(-1 * $sqr-dim, -8 * $sqr-dim) rotate(540deg);
+    }
+    100% {
+        transform: translate(2 * $sqr-dim, -9 * $sqr-dim) rotate(720deg);
+    }
+}
+
+@mixin base-anim {
+    animation: base 20s linear infinite;
+}
+
+@mixin circle {
+    @include base-anim;
+}
+
+.container {
+    list-style: none;
+    position: relative;
+    overflow: hidden;
+    margin: 10% auto;
+    height: $box-height;
+    width: 0.5 * $box-height;
+    background-image: $gradient;
+    .circle1 {
+        @include circle;
+        position: absolute;
+        bottom: -$sqr-dim;
+        left: 0px;
+        background-image: $gradient;
+        width: $sqr-dim;
+        height: $sqr-dim;
+        border-radius: 50%;
+    }
+    .circle2 {
+        @extend .circle1;
+        left: 1 * $sqr-dim-small;
+        width: $sqr-dim-big;
+        height: $sqr-dim-big;
+        animation-delay: -1s;
+    }
+    .circle3 {
+        @extend .circle1;
+        left: 2 * $sqr-dim-small;
+        animation-delay: -3s;
+        width: $sqr-dim-medium;
+        height: $sqr-dim-medium;
+    }
+    .circle4 {
+        @extend .circle1;
+        left: 8 * $sqr-dim-small;
+        animation-delay: -5s;
+        width: $sqr-dim-big;
+        height: $sqr-dim-big;
+    }
+    .circle5 {
+        @extend .circle1;
+        left: 6 * $sqr-dim-small;
+        animation-delay: -7s;
+        width: $sqr-dim-small;
+        height: $sqr-dim-small;
+    }
+    .circle6 {
+        @extend .circle1;
+        left: 3 * $sqr-dim-small;
+        animation-delay: -9s;
+        width: $sqr-dim-medium;
+        height: $sqr-dim-medium;
+    }
+    .circle7 {
+        @extend .circle1;
+        left: 4 * $sqr-dim-small;
+        animation-delay: -11s;
+        width: $sqr-dim-small;
+        height: $sqr-dim-small;
+    }
+    .circle8 {
+        @extend .circle1;
+        left: 5 * $sqr-dim-small;
+        animation-delay: -13s;
+        width: $sqr-dim-big;
+        height: $sqr-dim-big;
+    }
+}

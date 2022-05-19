@@ -15,7 +15,7 @@
         <span class="card__img"></span>
         <div class="card__content">
             <ul class="card__list">
-                <li class="card__item card__item--active">AdobeXd</li>
+                <li class="card__item  card__item--active">AdobeXd</li>
                 <li class="card__item">Figma</li>
                 <li class="card__item">Sketch</li>
             </ul>
@@ -23,7 +23,16 @@
             <a class="card__link" href="#">More</a>
         </div>
     </div>
-
+    <script>
+        const cardItems = document.getElementsByClassName("card__item");
+        console.log(cardItems);
+        for (item of cardItems) {
+            item.addEventListener("click", function() {
+                this.classList.toggle("card__item--active")
+                console.log(cardItems);
+            });
+        }
+    </script>
 </body>
 
 </html>

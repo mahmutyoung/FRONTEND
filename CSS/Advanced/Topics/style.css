@@ -1,0 +1,142 @@
+/*+===============CASCADE-INHERITENCE-SPECIFICITY ==============+*/
+
+
+/**SPECIFICITY*/
+
+
+/* 
+ *1. Specificity Function =[A,B,C,D,E]
+  
+  *1.1. A={!important}
+    B={inline-style}
+    C={#id selectors}
+    D={.class,:pseudo-class, attribute selectors}
+    E={element, pseudo-element selectors}
+
+    Note: *, >, +, ~: Universal selector and combinators have 0 value.
+    
+  *1.2. In any case A>B>C>D>E categorically.
+  *1.3. Assume Selector1 = [A1,B1,C1,D1,E1], Selector2 = [A2,B2,C2,D2,E2].
+    
+    Start from A.
+    1.3.1. If the letter on the left of Selector-x is bigger it wins.
+    1.3.2. If the letter on the left of Selector-x is equal then pass to the
+     next(right) letter. Go to (1.3.1)
+
+
+
+ 
+  
+ *2. Inline style-rule win over any other specificity except !important
+ *3.If two selectors' specificity are same, then the one coming later on the
+ source style-rules wins.
+
+ *4. There is no difference between style-rules declared in the document's head 
+ element and external style-rules.
+
+    *4.1. Minor Details
+    
+    A minor exception for 4.
+    Style-rule declared in body element, that is not
+    inline, cascade external stylesheet. It might be about
+    browser or any other environmental preferences 
+    
+
+ 2. Style-rules defined by JS code depends on the function's selector.
+  //2.1. classList.add([value]) act like stylesheet.
+  // 2.2. The function setAttribute("style", "type: value") act as inline style-rule.
+  //2.3. the [..element].style.[property]=[value] act as inline style-rule.
+
+ *Resources
+ 1. Cartoon explanation of specity: https://specifishity.com/ 
+
+*/
+
+
+/**INHERITENCE*/
+
+
+/* 
+/**Minor Details
+
+* Inheritence provide a CSS property to all children element, not only direct children
+
+* Inheritence does not work on CSS shorthand properties declarations.
+* Example
+.container-a {
+  font: italic 1.2em/1.75 Lato;
+    }
+
+.container-a p {  /**! the font-style for p element will not be italic.
+  font: 1em Lato;  
+}
+
+* Solution1
+.container-a {
+  font: 1.2em/1.75 Lato;
+  font-style:italic  /*+ Font style declared in long-form
+    }
+.container-a p {  
+  font: 1em Lato;   
+}
+  
+
+* Solution2
+.container-a {
+  font: italic 1.2em/1.75 Lato;
+    }
+.container-a p {  
+  font: inherit 1em Lato; /*+ inherit is added to short-hand declaration  
+}
+
+!PROPERTIES THAT ARE INHERITED
+border-collapse
+border-spacing
+caption-side
+color
+cursor
+direction
+empty-cells
+font-family
+font-size
+font-style
+font-variant
+font-weight
+font-size-adjust
+font-stretch
+font
+letter-spacing
+line-height
+list-style-image
+list-style-position
+list-style-type
+list-style
+orphans
+quotes
+tab-size
+text-align
+text-align-last
+text-decoration-color
+text-indent
+text-justify
+text-shadow
+text-transform
+visibility
+white-space
+widows
+word-break
+word-spacing
+word-wrap
+!End of the List
+
+*/
+
+
+/* .red {
+    color: red;
+}
+ */
+
+.my-paragraph {
+    color: purple;
+}

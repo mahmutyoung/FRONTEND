@@ -1,3 +1,7 @@
+/*???????????????? MAIN QUESTION?????????????????*/
+
+
+/*? Which rule will be applied to a HTML element?
 /*+===============CASCADE-INHERITENCE-SPECIFICITY ==============+*/
 
 
@@ -57,10 +61,24 @@
 
 
 /* 
-/**Minor Details
+
 
 * Inheritence provide a CSS property to all children element, not only direct children
 
+todo .inherit|initial|revert|revert-layer|unset|
+
+Browser's default: The properties of html without any CSS rules
+
+Headers size, 
+paragraph's starting newline, 
+default margin and padding, 
+anchors underlined and colored, 
+lists' bullets, letters, digits,
+input box.
+
+https://browserdefaultstyles.com/
+
+/**Minor Details
 * Inheritence does not work on CSS shorthand properties declarations.
 * Example
 .container-a {
@@ -90,12 +108,13 @@
 }
 
 !PROPERTIES THAT ARE INHERITED
+!It is not too hard to guess those properties. Note the the difficult ones
 border-collapse
 border-spacing
 caption-side
 color
-cursor
-direction
+!cursor
+!direction
 empty-cells
 font-family
 font-size

@@ -1,0 +1,18 @@
+/* GLOBALS */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+/* Colors */
+
+:root {
+    $color-primary: #e91e63;
+    $color-primary-light: #e86d96;
+    $color-primary-dark: #9c0a3a;
+    $color-font-light: #f6f6f6;
+    $color-font-dark: #111;
+    /* Typography */
+    $font: 'Open Sans';
+    body {
+        font-family: $font;
+    }
+}
